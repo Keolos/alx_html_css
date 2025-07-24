@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Tweets</title>
+    <link href="base.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+            <h1>Check Out This Tweet</h1>
+            <!-- Embed tweet below -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Learning HTML and building my first portfolio website with no frameworks! 💻🚀<br>Thanks @alxafrica 🙌<br><br>#HTML #WebDev</p>&mdash; Your Name (@yourhandle) 
+                <a href="https://twitter.com/twitter/status/20">June 15, 2025</a>
+            </blockquote>
+           <script async src="https://platform.twitter.com/widgets.js"></script>
+
+            <p><a href="index.html">← Back to homepage</a></p>
+        </article>
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Made by Mohammed Naji - <a href="https://x.com/MOHAMMEDNAJIAB" target="_blank">here</a>.</p>
+    </footer>
+</body>
+</html>
