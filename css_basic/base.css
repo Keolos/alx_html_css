@@ -19,3 +19,6 @@ header {
   text-align: center;
   border-bottom: 1px solid #e7e7e7;
 }
+.works_on_smartphone main {
+  flex-direction: column;
+}
