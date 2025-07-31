@@ -4,96 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Advanced Project</title>
-  <!-- Add the CSS link (we will create styles later) -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header section -->
-    <header>
+  <!-- HEADER with hero background -->
+  <header>
     <nav class="nav-container">
-        <img src="images/logo.png" alt="Website Logo" class="logo">
-        <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        </ul>
+      <!-- Logo (smile.png) -->
+      <div class="logo">
+        <img src="images/smile.png" alt="SmileSchool Logo" style="height: 30px; vertical-align: middle;">
+        <span>SmileSchool</span>
+      </div>
+      
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
     </nav>
-    </header>
 
-  <!-- Main content -->
-  <main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Our CSS Advanced Project</h1>
-            <p>This project demonstrates advanced CSS techniques using Figma design.</p>
-            <a href="#" class="btn-primary">Get Started</a>
+    <!-- HERO content (centered text) -->
+    <div class="hero-content">
+      <h1>Get schooled</h1>
+        <div class="sub-text">
+            <span>SMILES</span>
+            <span>GRIN</span>
+            <span>LAUGH</span>
         </div>
-    </section>
-
-    <section class="about">
-         <div class="container">
-            <h2>About Us</h2>
-            <p>This project focuses on CSS, responsive design, and using Figma for pixel-perfect layouts.</p>
-        </div>
-</section>
-
-    <section class="services">
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="service-items">
-        <div class="service">
-            <img src="images/design-icon.png" alt="Design Icon">
-            <h3>UI/UX Design</h3>
-            <p>We create user-friendly and visually stunning designs based on user research.</p>
-        </div>
-        <div class="service">
-            <img src="images/code-icon.png" alt="Code Icon">
-            <h3>Web Development</h3>
-            <p>We build fast, modern, and responsive websites for all devices.</p>
-        </div>
-        <div class="service">
-            <img src="images/seo-icon.png" alt="SEO Icon">
-            <h3>SEO Optimization</h3>
-            <p>We help your website rank better and reach a wider audience.</p>
-        </div>
+        <a href="#" class="btn-primary">REGISTER FOR FREE</a>
+        <div class="learn-pros">
+            <h2><span style="color:#a259ff;">Learn</span> from the pros</h2>
+            <div class="profiles">
+                <img src="images/1.png" alt="Phillip Massey">
+                <img src="images/2.png" alt="Nannie Lawrence">
+                <img src="images/3.png" alt="Bruce Walters">
+                <img src="images/4.png" alt="Henry Hughes">
+            </div>
         </div>
     </div>
-    </section>
+  </header>
 
-    <section class="blog">
+  <!-- ABOUT Section -->
+  <section class="about">
     <div class="container">
-        <h2>Latest Blog Posts</h2>
-        <div class="blog-items">
-        <div class="blog-post">
-            <img src="images/blog1.jpg" alt="Blog Post 1">
-            <h3>Understanding Flexbox and CSS Grid</h3>
-            <p>Learn how to use Flexbox and Grid for creating advanced layouts in CSS.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-post">
-            <img src="images/blog2.jpg" alt="Blog Post 2">
-            <h3>Top 5 Tips for Responsive Design</h3>
-            <p>These tips will help you make your websites look great on all screen sizes.</p>
-            <a href="#">Read More</a>
-        </div>
-        </div>
+      <h2>About Us</h2>
+      <p>This project focuses on CSS, responsive design, and using Figma for pixel-perfect layouts.</p>
     </div>
-    </section>
+  </section>
 
-    <section class="contact">
+  <!-- SERVICES Section -->
+  <section class="services">
     <div class="container">
-        <h2>Contact Us</h2>
-        <form>
+      <h2>Our Services</h2>
+      <div class="service-items">
+        <div class="service">
+          <img src="images/Object.png" alt="Design Icon">
+          <h3>UI/UX Design</h3>
+          <p>We create user-friendly and visually stunning designs based on user research.</p>
+        </div>
+        <div class="service">
+          <img src="images/smile.png" alt="Code Icon">
+          <h3>Web Development</h3>
+          <p>We build fast, modern, and responsive websites for all devices.</p>
+        </div>
+        <div class="service">
+          <img src="images/Object.png" alt="SEO Icon">
+          <h3>SEO Optimization</h3>
+          <p>We help your website rank better and reach a wider audience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG Section -->
+  <section class="blog">
+    <div class="container">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-items">
+        <div class="blog-post">
+          <img src="images/1.png" alt="Blog Post 1">
+          <h3>Understanding Flexbox and CSS Grid</h3>
+          <p>Learn how to use Flexbox and Grid for creating advanced layouts in CSS.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+          <img src="images/2.png" alt="Blog Post 2">
+          <h3>Top 5 Tips for Responsive Design</h3>
+          <p>These tips will help you make your websites look great on all screen sizes.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+      </form>
     </div>
-    </section>
+  </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 - CSS Advanced Project</p>
   </footer>
