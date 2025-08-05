@@ -1,0 +1,188 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define some colors to reuse */
+:root {
+  --main-color: #FF6565;
+  --text-color: white;
+  --bg-dark: #000;
+}
+
+/* Apply font and background color to whole page */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-dark);
+}
+
+/* Container class to center content and limit width */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.site-header {
+  background-color: var(--bg-dark);
+  padding: 20px 0;
+}
+
+.logo {
+  width: 160px;
+}
+
+/* Navigation */
+.nav {
+  float: right;
+  margin-top: 15px;
+}
+
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: var(--main-color);
+}
+
+/* Hero section */
+.hero {
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+.cta-subtext {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsive for mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p,
+  .cta-subtext {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* What We Do Section */
+.what-we-do {
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  font-size: 16px;
+  margin-bottom: 50px;
+  color: #666;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service span {
+  font-size: 50px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
